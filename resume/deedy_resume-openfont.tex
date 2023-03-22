@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vaibhav}{Dhirendra}{ \urlstyle{same}\href{https://www.linkedin.com/in/vaibhav-dhirendra/}{Software Engineering Undergrad | Linkedin} \\
+\href{mailto:vaibhav.dhiru.vd@gmail.com}{vaibhav.dhiru.vd@gmail.com} | 8971615145 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{VIT University}
+\descript{Integrated M.Tech in SWE}
+\location{May 2024 | Vellore, India}
+\location{CGPA-8.72}
+\sectionsep
+
+\subsection{Pana Pre-Uni College}
+\descript{Intermediate}
+\location{May 2018 | Mangalore, India}
+\location{Perct\%-76.66\%}
+\sectionsep
+
+\subsection{Sharada Vidyalaya School}
+\location{May 2017|  Mangalore, India}
+\location{CGPA-9.6}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+\textbullet C++ \textbullet{}  C  \textbullet{} Python \textbullet{} Java\\
+
+\location{Technologies:}
+\textbullet {Operating System}\textbullet{Blockchain}  \textbullet{API}  \textbullet{Chatbot} \textbullet{Web Development } \textbullet{GIT}   \\
+\location{Familiar:}
+\textbullet Cybersecurity  \textbullet{Software Development} \textbullet{AngularJS} \textbullet{MySQL} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures and Algorithm \\
+Software Engineering Fundamentals\\
+Human Computer Interaction\\
+Operating Systems \\
+Natural Language Processing \\
+Software Reuse \\
+Computer Networks Fundamentals \\
+Database management \\
+Software Testing\\
+Software Architecture\\
+Requirements Engineering\\
+Software Project Management\\
+\sectionsep
+
+\subsection{Technical Experience}
+Ranked Top 4 in VIT hack under MovelAI \\
+Technical Mentor at Girlscript Vellore \\
+Part of WebDev at Sigma Xi VIT \\
+Managed projects at Girlscript Vellore \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Links} 
+
+Github:// \href{https://github.com/VaibhavDhirendra}{\bf VaibhavDhirendra} \\
+LinkedIn://  \href{https://www.linkedin.com/in/vaibhav-dhirendra}{\bf Vaibhav Dhirendra} \\
+Twitter://  \href{https://twitter.com/Vaibhav_dh_}{\bf @vaibhav\_dh\_} \\
+Leetcode:// \href{https://leetcode.com/vaibhav_vd/}{\bf vaibhav_vd}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Project EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+
+
+\end{tightemize}
+\sectionsep
+\section{PROJECTS}
+\runsubsection{E-Voting portal}
+\descript{|Blockchain | Web Development }
+\location{July 2021 - Dec 2022 | Vellore, India}
+\vspace{\topsep}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item A decentralized e-voting portal which will make sure that voting process is smooth and corruption-free. 
+\item It is build using HTML, CSS, Javascript and Blockchain.
+\item It is made on Ganache which will be mimicking ethereum blockchain network.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Studdy-Buddy}
+\descript{| Student Resource Management System}
+\location{Jan 2022 – Present | Vellore, India}
+\vspace{\topsep}
+\begin{tightemize}
+\item It is a knowledge software which will help students utilize Seniors knowledge that they will feed on to the portal, helping students gain knowledge from experts.
+\item We have developed it using HTML, CSS and Javascript.
+\end{tightemize}
+\vspace{\topsep}
+\runsubsection{Candidate Screening chatbot}
+\descript{| IBM watson | NLP}
+\location{July 2022 - Present | Vellore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tightemize}
+\item A chat-bot which will have interaction with candidates and depending on the answers he will be rated using some pre-defined metric and finally required candidates will be selected.
+\item Will be developed on IBM watson, We can integrate it with any Websites. 
+
+\end{tightemize}
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Leadership Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership Experience}
+\runsubsection{Girlscript Vellore }
+\descript{| Chapter Lead}
+\location{Aug 2021 – Nov 2022 | Vellore, India}
+\vspace{\topsep}
+Worked with like minded people. Initiated project based learning. Team formation was one of the biggest task that was completed successfully. Organized various event and internal sessions to encourage development mindset.  
+\sectionsep
+
+\runsubsection{Sigma Xi VIT}\
+\descript{| Vice-Chairperson}
+\location{Jan 2020 – Dec 2021 | Vellore, India}
+\vspace{\topsep}
+Was Leading Management team, Organized various Tech sessions and participated in hackathons. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Industry Certification
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Industry Certificates} 
+\begin{tabular}{rll}
+2020	     & Blockchain Fundamentals  & Issued by IBM\\
+2020	     & Blockchain Essentials V2  & Issued by IBM\\
+2020	     & Building Chatbots  &Issued by IBM \\
+2020     & Data mining and Data Warehousing & Issued by VIT University  \\
+
+2020     & Legal Aspects of Business & Issued by VIT University  \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Voluntary Experiences} 
+\begin{tabular}{rll}
+2020	     & Sales and marketing intern &MyCaptain  \\
+2020	     & Campus Influencer &InterviewBit  \\
+2020	     & Student Coordinator & Sigma Xi VIT  \\
+2020	     & Event Coordinator &Sigma Xi VIT  \\
+
+\end{tabular}
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
